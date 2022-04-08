@@ -1,0 +1,19 @@
+/* Variables */
+
+$color-one: #ffffff;
+$color-two: #FED136;
+
+$font-main: 'Roboto', sans-serif;
+$font-secondary: 'Open Sans Condensed', sans-serif;
+
+*, *::before, *::after {
+  box-sizing: border-box;   
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-main;
+  text-align: center;
+}
