@@ -1,10 +1,13 @@
 /* Variables */
 
-$color-one: #ffffff;
+$color-light: #fff;
+$color-dark: #2f3542;
 $color-two: #FED136;
 
 $font-main: 'Roboto', sans-serif;
 $font-secondary: 'Open Sans Condensed', sans-serif;
+
+/* Global */
 
 *, *::before, *::after {
   box-sizing: border-box;   
@@ -16,4 +19,16 @@ body {
   line-height: 1.7;
   font-family: $font-main;
   text-align: center;
+  background-color: $color-dark;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-two
 }

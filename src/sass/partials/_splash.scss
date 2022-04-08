@@ -1,0 +1,28 @@
+.navigation {
+
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    height: 100px;
+    width: 100px;
+
+    img{
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .nav-menu {
+    list-style: none;
+    font-size: 22px;
+    padding-top: 10px;
+
+    .nav-menu-element {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      text-transform: uppercase;
+    }
+  }
+}
