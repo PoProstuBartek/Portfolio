@@ -1,0 +1,47 @@
+#projects {
+  height: 100vh;
+
+  .projects-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .project {
+      width: 32%;
+      height: 250px;
+      background-color: pink;
+      margin-bottom: 27px;
+
+      .project-title {
+        font-family: $font-main;
+        color: $color-light;
+        font-size: 22px;
+      }
+
+      .project-paragraph {
+        font-family: $font-secondary;
+        color: $color-light;
+        font-size: 18px;
+      }
+
+      .project-hover {
+        opacity: 0;
+        transition: $transition;
+      }
+
+      &:hover .project-hover {
+        opacity: 1;
+        transition: $transition;
+      }
+    }
+  }
+
+  .projects-footer {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+    }
+  }
+}

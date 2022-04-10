@@ -1,0 +1,20 @@
+#footer {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .footer-wrapper {
+    display: flex;
+
+      .logo {
+        height: 100px;
+        width: 100px;
+  
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }  
+  }
+}

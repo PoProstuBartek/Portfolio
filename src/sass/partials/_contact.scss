@@ -1,0 +1,36 @@
+#contact {
+  height: 50vh;
+  padding-top: 100px;
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+
+    .contact-text {
+      width: 45%;
+    }
+
+    .contact-box {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .inputs {
+          display: flex;
+          justify-content: space-between;
+
+          input {
+            margin-bottom: 11px;
+            height: 40px;
+            width: 49%;
+          }
+        }
+      }
+    }
+  }
+}
