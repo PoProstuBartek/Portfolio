@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPB-Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,38 +11,36 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header id="splash">
+    <section id="home" class="section home">
+      <nav class="navigation">
+        <a href="#home" class="logo">
+          <img src="images/logo.png" alt="PPB">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-element underline home active">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-element about underline">
+            <a href="#about">About me</a>
+          </li>
+          <li class="nav-element projects underline">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav-element contact underline">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <div class="container">
-        <nav class="navigation">
-          <a href="#" class="logo">
-            <img src="images/logo.png" alt="PPB">
-          </a>
-          <ul class="nav-menu">
-            <li class="nav-menu-element">
-              <a href="#">Home</a>
-            </li>
-            <li class="nav-menu-element">
-              <a href="#">About me</a>
-            </li>
-            <li class="nav-menu-element">
-              <a href="#">Projects</a>
-            </li>
-            <li class="nav-menu-element">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="container">
-          <div class="splash-inner">
-            <h1 class="page-title">Hello! My name is Bartek. It is a pleasure to meet you!</h1>
-            <h2 class="page-subtitle">Thank you for visiting my page.</h2>
-            <a href="#about" class="btn">Let us know each other better!</a>
-          </div>
+        <div class="splash-inner">
+          <h1 class="page-title">Hello! My name is Bartek. It is a pleasure to meet you!</h1>
+          <h2 class="page-subtitle">Thank you for visiting my page.</h2>
+          <a href="#about" class="btn">Let us know each other better!</a>
         </div>
       </div>
-    </header>
+    </section>
 
-    <section id="about">
+    <section id="about" class="section">
       <div class="container">
         <div class="about-left">
           <img src="images/logo.png" alt="PPB">
@@ -60,7 +57,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title">Portfolio</h2>
         <p class="section-paragraph">Bellow i wolud like to show you projects, that i have been working on recently.</p>
@@ -108,7 +105,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
       <div class="container">
         <div class="contact-text">
           <h2 class="section-title">It was pleasure to meet you!</h2>
@@ -120,7 +117,7 @@
           <div class="contact-box">
             <form>
               <div class="inputs">
-                <input type="text" name="name" placeholder="Enter your name?" required>
+                <input type="text" name="name" placeholder="Enter your name" required>
                 <input type="email" name="e-mail" placeholder="Enter your e-mail" required>
               </div>
               <textarea name="message" rows="15" cols="30" maxlength="300" placeholder="Enter your message here"></textarea>
@@ -140,5 +137,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

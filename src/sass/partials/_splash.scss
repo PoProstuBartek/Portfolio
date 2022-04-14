@@ -1,32 +1,65 @@
-#splash {
+#home {
   height: 100vh;
   position: relative;
 
-  .navigation {
+  .logo {
+    margin: 20px;
+    height: 70px;
+    width: 70px;
 
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .navigation {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-
-    .logo {
-      height: 100px;
-      width: 100px;
-
-      img{
-        height: 100%;
-        width: 100%;
-      }
-    }
+    width: 100%;
+    padding: 0 50px;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    z-index: 5;
 
     .nav-menu {
       list-style: none;
       font-size: 22px;
       padding-top: 10px;
 
-      .nav-menu-element {
+      .nav-element {
         display: inline-block;
         margin: 0 20px 0 0;
         text-transform: uppercase;
+        position: relative;
+        color: $color-one;
+
+        &.active {
+          a {
+            color: $color-two;
+            transition: $transition;
+          }
+        }
       }
+
+      .underline:after {
+        content: '';
+        width: 0;
+        border-radius: 5px;
+        height: 3px;
+        bottom: 0;
+        margin: 0 auto;
+        background: $color-two;
+        position: absolute;
+        left: 0;
+        transition: 0.5s;
+      }
+
+      .underline:hover::after {
+        width: 100%;
+      }
+
     }
   }
 

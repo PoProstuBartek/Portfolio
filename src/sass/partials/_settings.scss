@@ -1,8 +1,9 @@
 /* Variables */
 
-$color-light: #fff;
-$color-dark: #2f3542;
-$color-two: #FED136;
+$color-light: #f0f0f0;
+$color-dark: #141414;
+$color-one: #b4b4b4;
+$color-two: #26de82d8;
 
 $font-main: 'Roboto', sans-serif;
 $font-secondary: 'Open Sans Condensed', sans-serif;
@@ -11,8 +12,16 @@ $transition: 0.7s;
 
 /* Global */
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;   
+}
+
+*:focus {
+  outline: none;
 }
 
 body {
@@ -32,7 +41,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $color-two;
+  color: $color-light;
 }
 
 .btn {
@@ -40,12 +49,21 @@ a {
   min-width: 180px;
   margin: 24px auto 0;
   padding: 15px;
-  border-radius: 3px;
+  border-radius: 20px;
   font-family: $font-main;
   font-size: 14px;
   cursor: pointer;
-  color: $color-light;
-  background-color: $color-two;
+  color: $color-two;
+  background-color: $color-dark;
+  border: 2px solid $color-two;
+  transition: 0.5s;
+
+  &:hover {
+    color: $color-light;
+    background-color: $color-two;
+    transition: 0.5s;
+    transform: scale(1.1);
+  } 
 }
 
 .section-title {
