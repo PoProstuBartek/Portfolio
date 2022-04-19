@@ -1,7 +1,11 @@
 'use strict';
 // Selectors
+const body = document.querySelector('body');
 const sections = document.querySelectorAll('section');
 const navLink = document.querySelectorAll('.nav-element');
+const menuBtn = document.querySelector('.menuBtn');
+const navMobile = document.querySelector('.nav-mobile');
+const navMobileElem = document.querySelectorAll('.nav-mobile-element');
 
 // Navigation
 function linkClickHandler(){
@@ -19,6 +23,20 @@ function linkClickHandler(){
 for(let link of navLink){
   link.addEventListener('click', linkClickHandler);
 }
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('open');
+  navMobile.classList.toggle('active-mobile');
+  body.classList.toggle('no-scroll');
+});
+
+navMobileElem.forEach((item) => {
+  item.addEventListener('click', () =>{
+    menuBtn.classList.toggle('open');
+    navMobile.classList.toggle('active-mobile');
+    body.classList.toggle('no-scroll');
+  });
+});
 
 window.addEventListener('scroll', () => {
   let current = '';

@@ -1,6 +1,7 @@
 #home {
   height: 100vh;
   position: relative;
+}
 
   .logo {
     margin: 20px;
@@ -59,8 +60,65 @@
       .underline:hover::after {
         width: 100%;
       }
-
     }
+
+    .menuBtn {
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+
+      div {
+        width: 35px;
+        height: 3px;
+        background-color: $color-light;
+        margin: 6px;
+        transition: $transition;
+      }
+    }
+
+    .open .bar1 {
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+  
+    .open .bar2 {
+      opacity: 0; 
+    }
+  
+    .open .bar3 {
+      transform: rotate(45deg) translate(-6px, -7px);
+    }
+
+  }
+  .nav-mobile {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 100vw;
+    right: 0;
+    bottom: 0;
+    background-color: $color-dark;
+    background-image: url('../../images/navbg.png');
+    overflow: hidden;
+    transition: $transition ease;
+    z-index: 2;
+
+    .nav-mobile-menu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+
+      .nav-mobile-element {
+        text-transform: uppercase;
+        margin: 5px auto;
+        font-size: 28px;
+      }
+    }
+  }
+  .active-mobile {
+    transform: translateX(-100vw);
   }
 
   .splash-inner {
@@ -75,6 +133,19 @@
 
     .page-subtitle {
       color: $color-light;
+    }
+  }
+
+@media (max-width: 767px) {
+  .navigation {
+    padding: 0px;
+  
+    .nav-menu {
+      display: none;
+    }
+
+    .menuBtn {
+      display: block;
     }
   }
 }

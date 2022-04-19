@@ -1,20 +1,21 @@
 #footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 30px;
 
   .footer-wrapper {
     display: flex;
+    justify-content: space-between;
 
-    .logo {
-      height: 100px;
-      width: 100px;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }  
+}
 
-      img{
-        height: 100%;
-        width: 100%;
-      }
-    }  
+@media (max-width: 767px) {
+  .footer-paragraph {
+    width: 50%;
+    font-size: 18px;
   }
 }

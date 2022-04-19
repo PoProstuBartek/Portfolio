@@ -33,6 +33,10 @@ body {
   background-color: $color-dark;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -68,7 +72,7 @@ a {
 
 .section-title {
   font-family: $font-main;
-  color: $color-light;
+  color: $color-two;
 }
 
 .section-paragraph {
