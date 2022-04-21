@@ -1,21 +1,36 @@
 #footer {
-  display: flex;
-  flex-direction: column;
+  height: 120px;
+  padding-top: 30px;
 
   .footer-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 60px;
 
-    img{
-      height: 100%;
-      width: 100%;
+    a {
+      height: 70px;
+    
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 18px;
     }
   }  
 }
 
 @media (max-width: 767px) {
-  .footer-paragraph {
-    width: 50%;
-    font-size: 18px;
+  #footer {
+    .footer-wrapper {
+      margin: 0;
+      
+      .footer-paragraph {
+        width: 50%;
+        font-size: 18px;
+      }
+    }
   }
 }

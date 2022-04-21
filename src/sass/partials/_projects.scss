@@ -10,7 +10,7 @@
     .project {
       width: 32%;
       height: 250px;
-      background-color: pink;
+      background-color: $color-one;
       margin-bottom: 27px;
 
       .project-title {
@@ -58,6 +58,16 @@
 
       .project {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio {
+    .projects-wrapper{
+      .project{
+        width: 48%;
       }
     }
   }
