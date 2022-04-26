@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="">
@@ -54,7 +53,7 @@
       </nav>
       <div class="container">
         <div class="splash-inner">
-          <h1 class="page-title">Hi. I'm Bartek. It's nice to meet you friend!</h1>
+          <h1 class="page-title">Hi. I'm Bartek. It's nice to meet you!</h1>
           <a href="#about" class="btn">Let us know each other better!</a>
         </div>
       </div>
@@ -82,38 +81,31 @@
     <section id="projects" class="section">
       <div class="container portfolio">
         <h2 class="section-title">Portfolio</h2>
-        <p class="section-paragraph">Bellow i wolud like to show you projects, that i have been working on recently.</p>
+        <p class="section-paragraph">Bellow i wolud like to show you projects, that i have been working on recently.
+          The live version of a project might take a few seconds to load.</p>
         <div class="projects-wrapper">
-          <div class="project">
-            <div id="pizzeria">
-              <h3 class="project-hover project-title">Pizzeria</h3>
-              <p class="project-hover project-paragraph">PLACEHOLDER</p>
-              <a href="https://pieczarka-pizza.herokuapp.com/" class="project-hover">LIVE</a>
-              <a href="#" class="project-hover">GITHUB</a>
+          <div class="project pizzeria">
+            <div class="project-hover">
+              <h3 class="project-title">Pizzeria</h3>
+              <p class="project-paragraph">Up for some fresh italian pizza?</p>
+              <a href="https://pieczarka-pizza.herokuapp.com/" target="_blank"><i class="fa-solid fa-code-fork"></i><span class="hide">LIVE</span></a>
+              <a href="https://github.com/PoProstuBartek/Pizzeria" target="_blank"><i class="fa-brands fa-github"></i><span class="hide">GITHUB</span></a>
             </div>
           </div>
-          <div class="project">
-            <div id="">
-              <h3 class="project-hover project-title">Pizzeria</h3>
-              <p class="project-hover project-paragraph">PLACEHOLDER</p>
-              <a href="https://pieczarka-pizza.herokuapp.com/" class="project-hover">LIVE</a>
-              <a href="#" class="project-hover">GITHUB</a>
+          <div class="project waiters-app">
+            <div class="project-hover">
+              <h3 class="project-title">WaitersApp</h3>
+              <p class="project-paragraph">This little app allows you to organize your restaurant a little bit better.</p>
+              <a href="https://waiterhelper.herokuapp.com/" target="_blank"><i class="fa-solid fa-code-fork"></i><span class="hide">LIVE</span></a>
+              <a href="https://github.com/PoProstuBartek/WaiterApp" target="_blank"><i class="fa-brands fa-github"></i><span class="hide">GITHUB</span></a>
             </div>
           </div>
-          <div class="project">
-            <div id="">
-              <h3 class="project-hover project-title">Pizzeria</h3>
-              <p class="project-hover project-paragraph">PLACEHOLDER</p>
-              <a href="https://pieczarka-pizza.herokuapp.com/" class="project-hover">LIVE</a>
-              <a href="#" class="project-hover">GITHUB</a>
-            </div>
-          </div>
-          <div class="project">
-            <div id="">
-              <h3 class="project-hover project-title">Pizzeria</h3>
-              <p class="project-hover project-paragraph">PLACEHOLDER</p>
-              <a href="https://pieczarka-pizza.herokuapp.com/" class="project-hover">LIVE</a>
-              <a href="#" class="project-hover">GITHUB</a>
+          <div class="project to-do">
+            <div class="project-hover">
+              <h3 class="project-title">To do list</h3>
+              <p class="project-paragraph">Make a list. Fill that list. Get it done. Simple to-do aplication.</p>
+              <a href="https://ppb-to-do.herokuapp.com/" target="_blank"><i class="fa-solid fa-code-fork"></i><span class="hide">LIVE</span></a>
+              <a href="https://github.com/PoProstuBartek/ToDo-list" target="_blank"><i class="fa-brands fa-github"></i><span class="hide">GITHUB</span></a>
             </div>
           </div>
         </div>
@@ -131,13 +123,12 @@
       <div class="container contact">
         <div class="contact-text">
           <h2 class="section-title">Contact me</h2>
-          <p class="section-paragraph">It was pleasure to meet you! I home you enjoyed my little piece of Internet. If you have any questions about my projects,
-            or would like to work with me feel free reach out. I hope to see you again soon.
-            Have a great day!
+          <p class="section-paragraph">It was pleasure to meet you! I hope you enjoyed little piece of Internet i have created. If you have any questions about my projects,
+            or would like to work with me feel free reach out. I hope to see you again soon. <br>Have a great day!
           </p>
         </div>
           <div class="contact-box">
-            <form action="https://formsubmit.co/szczotkowski.b@gmail.com">
+            <form action="https://formsubmit.co/szczotkowski.b@gmail.com" method="POST">
               <div class="inputs">
                 <input type="text" name="name" placeholder="Enter your name" required>
                 <input type="email" name="e-mail" placeholder="Enter your e-mail" required>
@@ -151,12 +142,15 @@
 
     <footer id="footer">
         <div class="footer-wrapper">
-          <a href="#" class="logo">
-            <img src="images/logo.png" alt="PPB">
-          </a>
-          <p class="section-paragraph footer-paragraph">Handcrafted by me © PPB Bartłomiej Szczotkowski</p>
+          <span class="socials">
+            <a href="https://linkedin.com/in/szczotkowskibartlomiej" target="_blank"><i class="fa-brands fa-linkedin-in"></i><span class="hide">Linkedin</span></a>
+            <a href="https://github.com/PoProstuBartek" target="_blank"><i class="fa-brands fa-github"></i><span class="hide">Github</span></a>
+            <a href="https://facebook.com/bszczotkowski" target="_blank"><i class="fa-brands fa-facebook"></i><span class="hide">Facebook</span></a>
+          </span>
+          <p class="section-paragraph footer-paragraph">Handcrafted by © PPB Bartłomiej Szczotkowski</p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/2c41f5c12b.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

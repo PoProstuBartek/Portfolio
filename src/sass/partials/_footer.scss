@@ -6,19 +6,34 @@
     display: flex;
     justify-content: space-evenly;
     margin: 60px;
+    padding-bottom: 20px;
 
-    a {
-      height: 70px;
-    
-      img{
-        height: 100%;
-        width: 100%;
+    .socials {
+      width: 30%;
+      height: 80%;
+      margin: 10px;
+      font-size: 30px;
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        border: 2px solid $color-light;
+        border-radius: 50%;
+        width: 50px;
+        transition: $transition;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: $transition;
+          color: $color-two;
+          border: 2px solid $color-two;
+        }
       }
     }
+  }
 
-    p {
-      font-size: 18px;
-    }
+  p {
+    font-size: 18px;
   }  
 }
 
@@ -26,10 +41,20 @@
   #footer {
     .footer-wrapper {
       margin: 0;
+
+      .socials {
+        font-size: 26px;
+        flex-direction: column;
+
+        a {
+          margin: 5px auto;
+        }
+      }
       
       .footer-paragraph {
         width: 50%;
         font-size: 18px;
+        margin: auto;
       }
     }
   }

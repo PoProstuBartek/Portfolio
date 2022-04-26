@@ -97,7 +97,6 @@
     right: 0;
     bottom: 0;
     background-color: $color-dark;
-    background-image: url('../../images/navbg.png');
     overflow: hidden;
     transition: $transition ease;
     z-index: 2;
@@ -130,7 +129,7 @@
     .page-title {
       color: $color-light;
       animation: typing 3s steps(22), blink .5s step-end infinite alternate;
-      width: 34ch;
+      width: 29ch;
       overflow: hidden;
       white-space: nowrap;
       border-right: 3px solid;
@@ -166,6 +165,15 @@
 
       .menuBtn {
         display: block;
+        margin-right: 15px;
+      }
+    }
+
+    .splash-inner {
+      min-width: 300px;
+      
+      .page-title {
+        font-size: 18px;
       }
     }
   }
