@@ -19,7 +19,7 @@
       a {
         border: 2px solid $color-light;
         border-radius: 50%;
-        width: 50px;
+        width: 55px;
         transition: $transition;
 
         &:hover {
@@ -48,6 +48,7 @@
 
         a {
           margin: 5px auto;
+          width: 50px;
         }
       }
       
