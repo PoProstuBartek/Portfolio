@@ -10,9 +10,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
     
     .project {
-      width: 32%;
+      width: 48%;
       height: 250px;
       background-color: $color-dark;
       margin-bottom: 27px;
@@ -71,7 +73,7 @@
     }
 
     .pizzeria {
-      background-image: url("../../images/pizzeria2.png");
+      background-image: url("../../images/pizzeria.png");
     }
 
     .waiters-app {
@@ -81,6 +83,11 @@
 
     .to-do {
       background-image: url("../../images/to-do.png");
+      background-position: top;
+    }
+
+    .heroes {
+      background-image: url("../../images/heroes.png");
       background-position: top;
     }
   }
@@ -103,9 +110,14 @@
 
     .projects-wrapper {
       flex-direction: column;
+      width: 100%;
 
       .project {
         width: 100%;
+
+        .project-hover {
+          opacity: 0.8;
+        }
       }
     }
   }
@@ -114,6 +126,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .portfolio {
     .projects-wrapper{
+      width: 100%;
       .project{
         width: 48%;
       }
