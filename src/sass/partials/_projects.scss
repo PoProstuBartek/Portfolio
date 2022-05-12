@@ -73,21 +73,21 @@
     }
 
     .pizzeria {
-      background-image: url("../../images/pizzeria.png");
+      background-image: url("../images/pizzeria.png");
     }
 
     .waiters-app {
-      background-image: url("../../images/waiters-app.png");
+      background-image: url("../images/waiters-app.png");
       background-position: top;
     }
 
     .to-do {
-      background-image: url("../../images/to-do.png");
+      background-image: url("../images/to-do.png");
       background-position: top;
     }
 
     .heroes {
-      background-image: url("../../images/heroes.png");
+      background-image: url("../images/heroes.png");
       background-position: top;
     }
   }
@@ -127,6 +127,7 @@
   .portfolio {
     .projects-wrapper{
       width: 100%;
+      
       .project{
         width: 48%;
       }
