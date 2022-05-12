@@ -30,7 +30,8 @@
         font-family: $font-secondary;
         font-weight: bold;
         border-radius: 5px;
-        border: 2px solid $color-light;
+        border: none;
+        padding: 10px;
       }
       
       input::placeholder{
@@ -41,12 +42,13 @@
     textarea {
       background: $color-one;
       font-size: 18px;
-      border: 2px solid $color-light;
       border-radius: 5px;
       font-family: $font-secondary;
       font-weight: bold;
       color: lighten($color: $color-dark, $amount: 10%);
       resize: none;
+      border: none;
+      padding: 10px;
     }
 
     textarea::placeholder {
